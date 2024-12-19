@@ -1,0 +1,70 @@
+
+@media (max-width: 768px) {
+    .home-title, .home-author {
+        font-size: 50px !important;
+    }
+
+    .home-author {
+        line-height: 4rem !important;
+    }
+  }
+
+.home-container {
+    background: #141a20;
+    padding: 40px 20px;
+    border-radius: 8px;
+    height: 88vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    background-image: url('/assets/fullstackdeveloper-background.jpg'); /* Replace with your image path */
+    background-size: cover;   /* Ensure the image covers the entire div */
+    background-position: center center;  /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    height: 100vh; /* Set the height of the div to full viewport height */
+    display: flex;
+    align-items: center;  /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 20px;
+}
+
+.text-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text-left {
+    margin: 0px;
+    text-align: start;
+}
+
+.home-title {
+    font-size: 2rem;
+    color: #e0f0ff;
+    margin-bottom: 0rem;
+    line-height: 4rem;
+}
+
+.home-author {
+    font-size: 1.5rem;
+    color: #b0caf063;
+    margin-bottom: 1rem;
+}
+
+#dynamic-text {
+    border-right: 2px solid #00FF00;
+    padding-right: 5px;
+    animation: blink-caret 0.7s step-end infinite;
+    color: #00FF00;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00FF00; }
+}
+
